@@ -1,0 +1,92 @@
+html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  max-width: 375px;
+  margin: 10% auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 35px;
+  box-shadow: 10px 20px 50px 5px rgba(211, 211, 211, 0.445);
+}
+
+.card:nth-of-type(1) {
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-color: hsl(263, 55%, 52%);
+  background-position: right 20px top;
+  background-repeat: no-repeat;
+}
+
+.card:nth-of-type(2) {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.card:nth-of-type(3) {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card:nth-of-type(4) {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.card:nth-of-type(5) {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 20% 90%;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 2px solid hsl(0, 0%, 70%);
+  max-height: 60%;
+}
+
+.name {
+  margin: 0;
+  font-weight: 600;
+  color: hsl(0, 0%, 81%);
+  align-self: flex-end;
+}
+
+.verifiedGraduate {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: 0;
+  font-weight: 500;
+  color: hsl(0, 0%, 50%);
+  font-size: 0.9rem;
+  align-self: flex-start;
+}
+
+.emphasizedText {
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+}
+
+.card.card:nth-of-type(3) .emphasizedText,
+.card.card:nth-of-type(5) .emphasizedText,
+.card.card:nth-of-type(3) .name,
+.card.card:nth-of-type(5) .name {
+  color: hsl(217, 19%, 35%);
+}
+
+.quotation {
+  font-weight: 500;
+  color: hsl(0, 0%, 70%);
+  font-size: 0.9rem;
+}
